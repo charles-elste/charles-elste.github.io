@@ -1,0 +1,63 @@
+/*CSS DOCUMENT*/
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+body {
+  margin: 0;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  list-style: none;
+}
+ul {
+  list-style-type: none;
+}
+.menu li {
+  width: 25%;
+  height: 5%;
+  text-align: center;
+}
+.menu a {
+  font-size: 1em;
+  color: #000;
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+}
+li.desc {
+  font-size: 1em;
+  margin: 1em;
+}
+li.item {
+  font-size: 1.6em;
+  margin: 1em;
+}
+li.price {
+  font-size: 1em;
+  margin: 1em;
+}
+h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  text-align: center;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #00000;
+  text-align: center;
+}
