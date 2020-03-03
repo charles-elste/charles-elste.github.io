@@ -1,0 +1,117 @@
+/*CSS DOCUMENT*/
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+body {
+  margin: 0;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  background-color: #d5bbb1;
+  color: #393d3f;
+}
+img {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 3em;
+  list-style: none;
+  margin-bottom: 2em;
+}
+.menu li {
+  width: 20%;
+  text-align: center;
+}
+.menu a {
+  font-size: 2em;
+  color: #e85d75;
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 3em;
+}
+h4 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #e85d75;
+}
+h5 {
+  font-size: 2em;
+  text-align: center;
+  color: #3e6990;
+}
+h6 {
+  font-size: 1.5em;
+  text-align: center;
+}
+p {
+  font-size: 1.3em;
+  text-align: center;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1px 0;
+  width: 100%;
+  color: 3e6990;
+  text-align: center;
+  background-color: #d5bbb1;
+  height: 5%;
+}
+li {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  text-decoration: none;
+}
+ul {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+@media all and (min-width: 3em) and (orientation: portrait) {
+  img {
+    width: 100%;
+  }
+  .menu a {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.6em;
+  }
+  h5 {
+    font-size: 1.3em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #00000;
+    text-align: center;
+  }
+  li {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
