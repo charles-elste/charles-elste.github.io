@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e5e5e5;
+}
+
+.grid-container {
+  max-height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.4fr 0.4fr 2fr 0.5fr;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-content: center;
+}
+.item-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.item-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.r-tri {
+  display: fixed;
+  position: absolute;
+  max-height: 100vh;
+  max-width: 30vw;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+li,
+a {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo styling */
+
+.logo {
+  cursor: pointer;
+}
+path:hover {
+  transition: all 0.3s ease 0s;
+  fill: #418cc0;
+}
+
+/* Navigation Menu */
+
+nav ul {
+  list-style: none;
+  width: 65em;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+nav a {
+  transition: all 0.3s ease 0s;
+}
+nav a:hover {
+  color: #418cc0;
+}
+
+/* Based on navigation code by Skillthrive youtube.com/watch?v=PwWHL3RyQgk&t=640s */
+
+/* Intro text*/
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-kerning: auto;
+  font-size: 5em;
+  margin-bottom: 1em;
+}
+
+/* Title text */
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.5em;
+  font-kerning: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Headings */
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  font-kerning: auto;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  text-justify: inter-character;
+  margin-bottom: 4em;
+  margin-right: 3em;
+}
+#animation {
+  display: block;
+  margin: 0 auto;
+}
+label {
+  display: none;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+footer {
+  grid-column: 1 / 4;
+  margin-top: 5em;
+  text-align: center;
+  height: 1em;
+}
+.footer {
+  margin: 0;
+  padding: 0;
+}
+.bold {
+  font-weight: 700;
+}
+.pop {
+  color: #418cc0;
+}
+
+/* intro animation */
+
+.intro {
+  background: #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: #e5e5e5;
+  /*   overflow: hidden; */
+}
+
+.hide span {
+  /*   transform: translateY(100%); */
+  display: inline-block;
+}
+
+/* Based on animation code by Dev Ed youtube.com/watch?v=sN93DRYkCO8&t=1310s */
+
+/* hamburger menu */
+
+.menu-btn {
+  display: flex;
+  justify-content: right;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  border-radius: 2.5px;
+  transition: all 0.1s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  border-radius: 2.5px;
+  transition: all 0.1s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-25px);
+  background: transparent;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(17.5px, -17.5px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(17.5px, 17.5px);
+}
+.hero {
+  width: 70%;
+  float: right;
+}
+
+/* Based on "Animated Hamburger Menu Tutorial - CSS Effects" by codeSTACKr youtube.com/watch?v=dIyVTjJAkLw */
+
+@media only screen and (max-width: 1685px) {
+  .grid-container {
+    max-width: 1000px;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  nav ul {
+    width: 50em;
+  }
+  footer {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .grid-container {
+    max-width: 800px;
+  }
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item-4 {
+    display: none;
+  }
+  header {
+    display: block;
+    margin-bottom: 4em;
+  }
+  h2 {
+    margin-bottom: 1em;
+  }
+  p {
+    margin-right: 0;
+  }
+  nav {
+    padding: 0 2em;
+  }
+  label {
+    display: flex;
+    cursor: pointer;
+    justify-content: end;
+  }
+  nav ul {
+    text-align: center;
+    max-width: 100%;
+    display: none;
+  }
+  nav a {
+    display: block;
+  }
+  #toggle:checked + ul {
+    display: grid;
+    height: 20em;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 2em;
+  }
+  p {
+    font-size: 14px;
+    padding-right: 3em;
+  }
+}
