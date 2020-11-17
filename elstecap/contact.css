@@ -38,15 +38,6 @@ body {
   grid-column-start: 2;
   grid-column-end: 3;
 }
-.item-5 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin-top: 3em;
-}
-.item-6 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
 .r-tri {
   display: fixed;
   position: absolute;
@@ -98,9 +89,6 @@ nav a {
   transition: all 0.3s ease 0s;
 }
 nav a:hover {
-  color: #418cc0;
-}
-nav a:active {
   color: #418cc0;
 }
 
@@ -257,19 +245,7 @@ footer {
   width: 70%;
   float: right;
 }
-.portrait {
-  float: left;
-}
-.bio {
-  padding-left: 220px;
-  margin: 0;
-}
-.bio p {
-  padding: 0;
-  margin: 0;
-  margin-right: 7em;
-  margin-bottom: 7em;
-}
+
 /* Based on "Animated Hamburger Menu Tutorial - CSS Effects" by codeSTACKr youtube.com/watch?v=dIyVTjJAkLw */
 
 @media only screen and (max-width: 1685px) {
@@ -310,10 +286,6 @@ footer {
   }
   nav {
     padding: 0 2em;
-  }
-  .bio p {
-    margin-right: 2em;
-    margin-bottom: 4em;
   }
   label {
     display: flex;

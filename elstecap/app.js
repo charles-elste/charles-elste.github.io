@@ -8,14 +8,3 @@ tl.fromTo(".nav__links", { opacity: 0 }, { opacity: 1, duration: 0.25 }, "-=1");
 
 // Based on animation code by Dev Ed youtube.com/watch?v=sN93DRYkCO8&t=1310s
 
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
